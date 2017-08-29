@@ -1,4 +1,4 @@
-FROM abiosoft/caddy:latest
+FROM abiosoft/caddy:0.10.7
 
 ARG plugins=http.prometheus
 
