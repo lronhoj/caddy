@@ -8,3 +8,4 @@ RUN curl --silent --show-error --fail --location \
     | tar --no-same-owner -C /usr/bin/ -xz caddy \
  && chmod 0755 /usr/bin/caddy \
  && /usr/bin/caddy -version
+
