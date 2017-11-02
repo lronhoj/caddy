@@ -15,5 +15,15 @@ pipeline {
         }
       }
     }
+    stage('deploy') {
+      steps {
+        input 'Should we deploy?'
+      }
+    }
+    stage('deployed') {
+      steps {
+        echo 'Deployed!'
+      }
+    }
   }
 }
