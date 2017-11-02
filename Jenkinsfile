@@ -18,11 +18,13 @@ pipeline {
     stage('deploy') {
       steps {
         input 'Should we deploy?'
+        echo 'Deployed!'
       }
     }
-    stage('deployed') {
+    stage('revert') {
       steps {
-        echo 'Deployed!'
+        input 'Should we revert?'
+        echo 'Reverted!'
       }
     }
   }
