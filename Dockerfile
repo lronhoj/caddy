@@ -1,6 +1,6 @@
 FROM abiosoft/caddy:builder
 
-ENV PLUGINS=http.prometheus
+ENV PLUGINS=prometheus
 
 RUN /bin/sh /usr/bin/builder.sh
 
